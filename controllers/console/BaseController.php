@@ -26,14 +26,14 @@ class BaseController extends Controller
         $this->running = false;
     }
 
-    public function runTaskForever($runnable)
+    public function runTaskForever($runnable, $waitTimeOnError = 10)
     {
         while($this->running){
             try{
                 call_user_func($runnable);
             }catch(\Exception $e){
                 echo $e->getMessage(),PHP_EOL;
-                sleep(10);
+                sleep($waitTimeOnError);
             }
             if(is_callable('pcntl_signal_dispatch')){
                 pcntl_signal_dispatch();
