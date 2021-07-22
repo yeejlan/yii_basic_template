@@ -1,7 +1,7 @@
 # yii_basic_template
 Yii basic template
 
-###Quick start
+### Quick start
 
 ```bash
 composer install
@@ -10,14 +10,14 @@ yii serve --docroot public
 ```
 Visit http://localhost:8080/
 
-###Run console  command
+### Run console  command
 
 ```bash
 yii console/test/env
 yii console/test/runtask
 ```
 
-###Migration
+### Migration
 
 ```bash
 yii migrate
