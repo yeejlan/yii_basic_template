@@ -22,7 +22,7 @@ class BaseController extends Controller
 
     public function handleSignal($signal) : void
     {
-        echo 'got SIGTERM, exiting...',PHP_EOL;
+        echo 'got SIGTERM, exit.',PHP_EOL;
         $this->running = false;
     }
 

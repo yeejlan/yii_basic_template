@@ -19,7 +19,7 @@ class TestController extends BaseController
     }
 
     public function myTask() {
-        echo "I'm doing my job...",PHP_EOL;
+        echo "I'm doing my job...", time() ,PHP_EOL;
         sleep(5);
         echo "It's done.",PHP_EOL;
     }
