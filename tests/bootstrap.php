@@ -10,7 +10,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 require 'functions.php';
-require APP_PATH . './vendor/autoload.php';
+require APP_PATH . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(APP_PATH);
 $dotenv->load();
@@ -19,9 +19,9 @@ defined('YII_DEBUG') or define('YII_DEBUG', envBool('app_debug', false));
 defined('YII_ENV') or define('YII_ENV', env('app_env', 'prod'));
 
 
-require APP_PATH . './vendor/yiisoft/yii2/Yii.php';
+require APP_PATH . '/vendor/yiisoft/yii2/Yii.php';
 
-$config = require APP_PATH . './config/console.php';
+$config = require APP_PATH . '/config/console.php';
 
 $application = new yii\console\Application($config);
 $application->init();
