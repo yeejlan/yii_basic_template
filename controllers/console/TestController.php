@@ -8,7 +8,7 @@ use yii\console\Controller;
 class TestController extends BaseController
 {
     public function actionEnv() {
-        echo env('app_env');
+        echo 'app_env: ', env('app_env'), ', timezone: ',date_default_timezone_get();
     }
 
     public function actionRuntask() {

@@ -20,7 +20,7 @@ class SiteController extends Controller
 
     public function actionEnv()
     {
-        return env('app_env');
+        return 'app_env: ' . env('app_env') . ', timezone: '. date_default_timezone_get();
     }
 
     public function actionError()
