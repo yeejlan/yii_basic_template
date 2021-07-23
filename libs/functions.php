@@ -34,6 +34,11 @@ function isDev() : bool
     return env('app_env') === 'dev';
 }
 
+function isDebug() : bool
+{
+    return envBool('app_debug');
+}
+
 function isConsole() : bool
 {
     if(defined('APP_RUN_IN_CONSOLE') && APP_RUN_IN_CONSOLE === true) {
