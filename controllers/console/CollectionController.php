@@ -3,7 +3,6 @@
 namespace app\controllers\console;
 
 use Yii;
-//use Illuminate\Support\Collection;
 
 class CollectionController extends BaseController
 {
