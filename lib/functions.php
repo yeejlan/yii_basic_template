@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Container\Container;
+
 function env($varname, $defaultValue = '') : string
 {
     if(isset($_ENV[$varname])) {
@@ -55,3 +57,6 @@ function isWeb() : bool
     return false;
 }
 
+function container() : Container {
+    return Container::getInstance();
+}
