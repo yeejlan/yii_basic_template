@@ -19,6 +19,10 @@ yii console/test/runtask
 
 ### Migration
 
+Use flyway
+
+or
+
 ```bash
 yii migrate
 yii migrate/down 1
