@@ -8,6 +8,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 require APP_PATH . '/vendor/autoload.php';
+require APP_PATH . '/lib/Make.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(APP_PATH);
 $dotenv->load();

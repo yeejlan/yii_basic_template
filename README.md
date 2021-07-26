@@ -23,3 +23,7 @@ yii console/test/runtask
 yii migrate
 yii migrate/down 1
 ```
+
+### Todo
+
+add "flux" layer between controller and model

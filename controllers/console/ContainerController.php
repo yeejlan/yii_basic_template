@@ -3,7 +3,6 @@
 namespace app\controllers\console;
 
 use Yii;
-use lib\Make;
 
 class ContainerController extends BaseController
 {
@@ -22,7 +21,7 @@ class Mailer
 
 class SomeUser
 {
-    use Make;
+    use \Make;
 
     private $mailer;
 
