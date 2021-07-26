@@ -21,9 +21,8 @@ class CollectionController extends BaseController
             ['account_id' => 'account-x11', 'product' => 'Desk'],
         ]);
 
-        $grouped = $collection->groupBy('account_id');
-
-        print_r($grouped->all());
+        $grouped = $collection->groupBy('account_id')
+            ->dump();
     }
 
     public function actionKeyby() {
@@ -32,8 +31,7 @@ class CollectionController extends BaseController
             ['id' => '200', 'name' => 'Menu 2'],
         ]);
 
-        $topMenu = $topMenuArr->keyBy('id');
-
-        print_r($topMenu->all());
+        $topMenu = $topMenuArr->keyBy('id')
+            ->dump();
     }
 }
