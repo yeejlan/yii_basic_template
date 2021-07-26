@@ -1,7 +1,6 @@
 <?php
 
 define('APP_PATH', realpath(dirname(__FILE__)));
-define('APP_RUN_IN_CONSOLE', true);
 
 set_include_path(implode(PATH_SEPARATOR, array(
     realpath(APP_PATH . '/lib'), 

@@ -41,22 +41,6 @@ function isDebug() : bool
     return envBool('app_debug');
 }
 
-function isConsole() : bool
-{
-    if(defined('APP_RUN_IN_CONSOLE') && APP_RUN_IN_CONSOLE === true) {
-        return true;
-    }
-    return false;
-}
-
-function isWeb() : bool
-{
-    if(defined('APP_RUN_IN_WEB') && APP_RUN_IN_WEB === true) {
-        return true;
-    }
-    return false;
-}
-
 function container() : Container {
     return Container::getInstance();
 }
