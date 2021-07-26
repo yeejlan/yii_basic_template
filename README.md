@@ -26,4 +26,4 @@ yii migrate/down 1
 
 ### Todo
 
-add "flux" layer between controller and model
+add "flux" layer between controller and model/service
