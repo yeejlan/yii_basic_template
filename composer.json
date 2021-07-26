@@ -60,7 +60,10 @@
     "autoload": {
         "psr-4": {
             "lib\\": "lib/"
-        }
+        },
+        "files": [
+            "lib/functions.php"
+        ]
     },
     "repositories": [
         {
