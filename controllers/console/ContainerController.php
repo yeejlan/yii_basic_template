@@ -3,7 +3,6 @@
 namespace app\controllers\console;
 
 use Yii;
-use yii\console\Controller;
 use lib\Make;
 
 class ContainerController extends BaseController

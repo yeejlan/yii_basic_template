@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Container\Container;
+use Illuminate\Support\Collection;
 
 function env($varname, $defaultValue = '') : string
 {
