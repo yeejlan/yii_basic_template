@@ -2,7 +2,6 @@
 
 
 use PHPUnit\Framework\TestCase;
-use lib\Make;
 
 class SimpleTest extends TestCase
 {
@@ -11,6 +10,7 @@ class SimpleTest extends TestCase
         container()->bind(Mailer::class, FakeMailer::class);
         $user = SomeUser::make();
         $this->assertTrue($user->sendCoupon(1));
+        container()->bind(Mailer::class, Mailer::class);
     }
 }
 
@@ -32,7 +32,7 @@ class FakeMailer extends Mailer
 
 class SomeUser
 {
-    use Make;
+    use \Make;
 
     private $mailer;
 

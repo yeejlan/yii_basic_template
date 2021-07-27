@@ -2,7 +2,7 @@
 
 require 'bootstrap.php';
 
-$config = require APP_PATH . '/config/web.php';
+$config = require APP_PATH . '/config/console.php';
 
-$application = new yii\web\Application($config);
+$application = new yii\console\Application($config);
 $application->init();
