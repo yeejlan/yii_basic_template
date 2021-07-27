@@ -3,12 +3,12 @@
 define('APP_PATH', realpath(dirname(__FILE__)));
 
 set_include_path(implode(PATH_SEPARATOR, array(
-    realpath(APP_PATH . '/lib'), 
+    realpath(APP_PATH . '/libs'), 
     get_include_path(),
 )));
 
 require APP_PATH . '/vendor/autoload.php';
-require_once APP_PATH . '/lib/Make.php';
+require_once 'Make.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(APP_PATH);
 $dotenv->load();
